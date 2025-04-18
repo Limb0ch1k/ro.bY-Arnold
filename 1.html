@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexicon bY Arnold</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Поиск...">
+                <div class="badge">Слов: <span id="wordCount">0</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-grid">
+            <div class="sidebar" id="wordList"></div>
+            
+            <div class="details-card" id="wordDetails">
+                <h2 id="wordTitle"></h2>
+                <div class="pronunciation" id="wordPronunciation"></div>
+                
+                <div class="section">
+                    <h3>Определения</h3>
+                    <div id="wordDefinition"></div>
+                </div>
+
+                <div class="section">
+                    <h3>Примеры использования</h3>
+                    <div id="usageExamples"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="signature">bY Arnold</span>
+            <span class="copyright">© 2023 Linguistic Archive</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
